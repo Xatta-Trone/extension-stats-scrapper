@@ -18,10 +18,11 @@ jobs:
         with:
             node-version: "20"
       - run: npm ci
+      - run: git pull 
       - run: node index.js
       - run: |
             git config user.name  "xatta-trone"
             git config user.email "22274105+actions-user@users.noreply.github.com"
             git add -f 'data-chrome.json'
             git commit -m "Gihub action Bot"
-            git push
+            git push --force
