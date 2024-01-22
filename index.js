@@ -12,7 +12,7 @@ const chromeParser = {
     let data = {};
 
     const browser = await puppeteer.launch({
-      headless: false,
+      headless: true,
       defaultViewport: null,
     });
 
