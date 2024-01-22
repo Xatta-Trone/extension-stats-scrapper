@@ -1,0 +1,27 @@
+# @format
+
+name: "Github Actions Bot"
+on:
+    push:
+        branches: ['main']
+    schedule:
+    - cron: "*/5 * * * *"
+    workflow_dispatch:
+
+jobs:
+  cronJob:
+    name: "Update data"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+            node-version: "20"
+      - run: npm ci
+      - run: node index.js
+      - run: |
+            git config user.name  "xatta-trone"
+            git config user.email "22274105+actions-user@users.noreply.github.com"
+            git add .
+            git commit -m "Gihub action Bot"
+            git push
