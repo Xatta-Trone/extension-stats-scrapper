@@ -1,6 +1,6 @@
 # @format
 
-name: "Github Actions Bot"
+name: "🤖 GitHub Actions Bot 🤖"
 on:
     push:
         branches: ['main']
@@ -24,5 +24,5 @@ jobs:
             git config user.name  "xatta-trone"
             git config user.email "22274105+actions-user@users.noreply.github.com"
             git add -f 'data-chrome.json'
-            git commit -m "🤖 Auto commit by Gihub action Bot 🤖"
+            git commit -m "🤖 Auto commit by Gihub Actions Bot 🤖"
             git push --force
