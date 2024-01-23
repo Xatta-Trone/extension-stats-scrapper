@@ -12,7 +12,7 @@ const chromeParser = {
     let data = {};
 
     const browser = await puppeteer.launch({
-      headless: true,
+      headless: false,
       defaultViewport: null,
     });
 
@@ -36,13 +36,16 @@ const chromeParser = {
       size: "/html/body/div[1]/section/main/div[4]/div[1]/div[10]/span[2]",
       webStoreRank:
         "/html/body/div[1]/section/main/div[4]/div[2]/div[1]/div[1]/a",
+      webStoreRankChange:
+        "/html/body/div[1]/section/main/div[4]/div[2]/div[1]/div[1]/a/span",
       detailDescription: "/html/body/div[1]/section/main/div[7]/div/div/div",
     };
 
     const urlMappings = {
       chromeLink:
         "/html/body/div[1]/section/main/div[4]/div[1]/div[2]/span/a/@href",
-      website: "/html/body/div[1]/section/main/div[4]/div[1]/div[12]/span[2]/a/@href",
+      website:
+        "/html/body/div[1]/section/main/div[4]/div[1]/div[12]/span[2]/a/@href",
       promoImage: "/html/body/div[1]/section/main/div[12]/figure/img/@src",
       logo: "/html/body/div[1]/section/main/div[1]/div/div[1]/div[1]/img/@src",
     };
@@ -94,6 +97,26 @@ const chromeParser = {
 
     if (images.length > 0) {
       data.images = images.filter((e) => e.length > 0);
+    }
+
+    // do the chores
+    if (
+      data.webStoreRank != undefined &&
+      data.webStoreRank != null &&
+      data.webStoreRankChange != undefined &&
+      data.webStoreRankChange != null
+    ) {
+      data.webStoreRank = data.webStoreRank
+        .replace(data.webStoreRankChange, "")
+        .trim();
+    }
+
+    // fix last updated
+    if (data.lastUpdated != null && data.lastUpdated != undefined) {
+      const date = data.lastUpdated.match(/\d{4}.\d{2}.\d{2}/g);
+      if (date.length > 0) {
+        data.lastUpdated = date[0].trim();
+      }
     }
 
     // console.log(data);
