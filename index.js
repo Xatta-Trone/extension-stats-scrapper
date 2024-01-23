@@ -34,7 +34,6 @@ const chromeParser = {
         "/html/body/div[1]/section/main/div[4]/div[1]/div[5]/span[3]",
       createdAt: "/html/body/div[1]/section/main/div[4]/div[1]/div[6]/span[2]",
       size: "/html/body/div[1]/section/main/div[4]/div[1]/div[10]/span[2]",
-      website: "/html/body/div[1]/section/main/div[4]/div[1]/div[10]/span[2]",
       webStoreRank:
         "/html/body/div[1]/section/main/div[4]/div[2]/div[1]/div[1]/a",
       detailDescription: "/html/body/div[1]/section/main/div[7]/div/div/div",
@@ -43,6 +42,7 @@ const chromeParser = {
     const urlMappings = {
       chromeLink:
         "/html/body/div[1]/section/main/div[4]/div[1]/div[2]/span/a/@href",
+      website: "/html/body/div[1]/section/main/div[4]/div[1]/div[12]/span[2]/a/@href",
       promoImage: "/html/body/div[1]/section/main/div[12]/figure/img/@src",
       logo: "/html/body/div[1]/section/main/div[1]/div/div[1]/div[1]/img/@src",
     };
