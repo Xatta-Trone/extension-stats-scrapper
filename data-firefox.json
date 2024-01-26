@@ -2,15 +2,15 @@
     "title": "Medium parser",
     "description": "Unlocks the whole medium article on the go.",
     "author": "Xatta Trone",
-    "users": "1,815",
-    "usersChange": "▲ 223",
-    "weeklyDownloads": "400",
+    "users": "1,849",
+    "usersChange": "▲ 220",
+    "weeklyDownloads": "391",
     "version": "1.5.3",
     "lastUpdated": "2024-01-08",
     "createdAt": "2023-08-27",
     "size": "509.67K",
-    "storeRank": "2135",
-    "storeRankChange": "▲ 162",
+    "storeRank": "2112",
+    "storeRankChange": "▲ 168",
     "detailDescription": "<p>Read the medium membership articles for free!</p><p>Medium parser is a web browser extension to help read the member-only articles on <a href=\"https://prod.outgoing.prod.webservices.mozgcp.net/v1/fdcfc6c153f9138e01c641a3d640928eaf0866b31ff8e847597396d703317c4b/http%3A//medium.com\" rel=\"nofollow\">medium.com</a> from google web cache / <a href=\"https://prod.outgoing.prod.webservices.mozgcp.net/v1/d6a0c6a4bcb51c86522598733fc4e2c3b6d5b560d595ad34f65b45cab4f37ab4/http%3A//archive.is\" rel=\"nofollow\">archive.is</a></p>\n<p>This tool helps you overcome the 3 article/month limit on <a href=\"https://prod.outgoing.prod.webservices.mozgcp.net/v1/fdcfc6c153f9138e01c641a3d640928eaf0866b31ff8e847597396d703317c4b/http%3A//medium.com\" rel=\"nofollow\">medium.com</a> and allows you to read unlimited articles. </p>\n<p>The extension now supports identifying articles of external publishers and suggesting the link to read full content with the help of a Google search.</p>\n<p>✅Checkout my other extensions:\n<a href=\"https://addons.mozilla.org/en-US/firefox/user/16801663/\" rel=\"nofollow\">https://addons.mozilla.org/en-US/firefox/user/16801663/</a></p>",
     "storeLink": "https://addons.mozilla.org/firefox/addon/medium-parser/",
     "website": "https://github.com/Xatta-Trone/medium-parser-extension",
@@ -19,5 +19,5 @@
     "images": [
         "https://addons.mozilla.org/user-media/previews/full/294/294079.png?modified=1704801532"
     ],
-    "lastRun": "Thu, 25 Jan 2024 01:11:52 GMT"
+    "lastRun": "Fri, 26 Jan 2024 01:06:32 GMT"
 }
