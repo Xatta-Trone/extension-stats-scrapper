@@ -1,0 +1,104 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        border: 1px solid #ddd;
+      }
+
+      th,
+      td {
+        text-align: left;
+        padding: 16px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="text-align: center">State of Medium Parser</h2>
+    <h5 style="text-align: center">Last Updated: {{ chrome.lastRun }}</h5>
+    <table>
+      <tr>
+        <th>Key</th>
+        <th>Chrome</th>
+        <th>FireFox</th>
+      </tr>
+      <tr>
+        <td>Title</td>
+        <td>{{chrome.title}}</td>
+        <td>{{firefox.title}}</td>
+      </tr>
+      <tr>
+        <td>Author</td>
+        <td>{{chrome.author}}</td>
+        <td>{{firefox.author}}</td>
+      </tr>
+      <tr>
+        <td>Users</td>
+        <td>{{chrome.users}}</td>
+        <td>{{firefox.users}}</td>
+      </tr>
+      <tr>
+        <td>Users Since Last Week</td>
+        <td>{{chrome.usersChange}}</td>
+        <td>{{firefox.usersChange}}</td>
+      </tr>
+      <tr>
+        <td>Ratings</td>
+        <td>{{chrome.ratings}}</td>
+        <td>{{firefox.ratings}}</td>
+      </tr>
+      <tr>
+        <td>Version</td>
+        <td>{{chrome.version}}</td>
+        <td>{{firefox.version}}</td>
+      </tr>
+      <tr>
+        <td>Last Updated</td>
+        <td>{{chrome.lastUpdated}}</td>
+        <td>{{firefox.lastUpdated}}</td>
+      </tr>
+      <tr>
+        <td>Size</td>
+        <td>{{chrome.size}}</td>
+        <td>{{firefox.size}}</td>
+      </tr>
+      <tr>
+        <td>Store Rank</td>
+        <td>{{chrome.webStoreRank}}</td>
+        <td>{{firefox.storeRank}}</td>
+      </tr>
+      <tr>
+        <td>Store Rank Change</td>
+        <td>{{chrome.webStoreRankChange}}</td>
+        <td>{{firefox.storeRankChange}}</td>
+      </tr>
+      <tr>
+        <td>Store Link</td>
+        <td><a href="{{chrome.chromeLink}}">LINK</a></td>
+        <td><a href="{{firefox.storeLink}}">LINK</a></td>
+      </tr>
+      <tr>
+        <td>Website</td>
+        <td><a href="{{chrome.website}}">Website</a></td>
+        <td><a href="{{firefox.website}}">Website</a></td>
+      </tr>
+      <tr>
+        <td>Promo</td>
+        <td><img height="100" src="{{chrome.promoImage}}" /></td>
+        <td><img height="100" src="{{firefox.promoImage}}" /></td>
+      </tr>
+    </table>
+  </body>
+</html>

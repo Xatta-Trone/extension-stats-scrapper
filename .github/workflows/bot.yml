@@ -21,10 +21,12 @@ jobs:
       - run: git pull 
       - run: node chrome.js
       - run: node firefox.js
+      - run: node pdf.js
       - run: |
             git config user.name  "xatta-trone"
             git config user.email "22274105+actions-user@users.noreply.github.com"
             git add -f 'data-chrome.json'
             git add -f 'data-firefox.json'
+            git add -f 'data-pdf.pdf'
             git commit -m "🤖 Auto commit by Gihub Actions Bot 🤖"
             git push --force

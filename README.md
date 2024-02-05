@@ -7,7 +7,7 @@ This script is designed to parse extension statistics data from [Chrome Stats](h
 To use this script, follow these steps:
 - Ensure you have the required dependencies installed.
 - Run the script periodically to keep the data up-to-date.
-- Access the parsed data in the generated `data-chrome.json` and `data-firefox.json` files.
+- Access the parsed data in the generated `data-chrome.json`, `data-firefox.json` and `data-table.pdf` files.
 
 # Dependencies
 
@@ -20,13 +20,14 @@ npm install
 
 
 ```bash
-node chrome.js // or node firefox.js
+node chrome.js // or node firefox.js // node pdf.js
 ```
 
 # Generated Files
 
 - `data-chrome.json`: Contains parsed extension statistics data from Chrome Stats.
 - `data-firefox.json`: Contains parsed extension statistics data from Firefox Stats.
+- `data-table.pdf`: Contains parsed extension statistics data in a PDF format.
 
 # Notes
 

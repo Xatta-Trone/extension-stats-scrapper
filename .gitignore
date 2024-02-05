@@ -1,3 +1,4 @@
 node_modules
 data-chrome.json
 data-firefox.json
+*.pdf
