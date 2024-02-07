@@ -3,8 +3,6 @@
 import puppeteer from "puppeteer";
 import fs from "fs";
 
-
-
 const chromeParser = {
   parse: async (addonId) => {
     console.log(addonId);
@@ -129,9 +127,40 @@ const chromeParser = {
       fs.writeFile("data-chrome.json", JSON.stringify(data, null, 4), (err) => {
         console.log(err);
       });
+
+      let dailyData = JSON.parse(fs.readFileSync("daily-data.json", "utf-8"));
+      const todaysDateKey = new Date().toISOString().slice(0, 10);
+
+      if(dailyData.hasOwnProperty(todaysDateKey)) {
+        dailyData[todaysDateKey] = {
+          ...dailyData[todaysDateKey],
+          chromeUsers: data.users.replaceAll(",", ""),
+          chromeStoreRank: data.webStoreRank,
+          chromeRating: data.ratings.slice(0,4),
+        };
+      }else {
+        dailyData[todaysDateKey] = {
+          chromeUsers: data.users.replaceAll(",", ""),
+          chromeStoreRank: data.webStoreRank,
+          chromeRating: data.ratings.slice(0, 4),
+        };
+      }
+
+      fs.writeFile(
+        "daily-data.json",
+        JSON.stringify(dailyData, null, 4),
+        (err) => {
+          console.log(err);
+        }
+      );
+     
     }
 
     await browser.close();
+  },
+
+  getFormattedDate: () => {
+    return new Date().toISOString().slice(0,10);
   },
 
   getText: async (page, xpath, extractHTML = false) => {
@@ -158,7 +187,5 @@ const chromeParser = {
   },
 };
 
-
-
-// run the parser 
+// run the parser
 chromeParser.parse("egejbknaophaadmhijkepokfchkbnelc");
