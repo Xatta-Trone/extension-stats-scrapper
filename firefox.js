@@ -129,6 +129,32 @@ const FirefoxParser = {
           console.log(err);
         }
       );
+
+      let dailyData = JSON.parse(fs.readFileSync("daily-data.json", "utf-8"));
+      const todaysDateKey = new Date().toISOString().slice(0, 10);
+
+      if (dailyData.hasOwnProperty(todaysDateKey)) {
+        dailyData[todaysDateKey] = {
+          ...dailyData[todaysDateKey],
+          firefoxUsers: data.users.replaceAll(",", ""),
+          firefoxStoreRank: data.storeRank,
+          firefoxRating: data.ratings.slice(0, 4),
+        };
+      } else {
+        dailyData[todaysDateKey] = {
+          firefoxUsers: data.users.replaceAll(",", ""),
+          firefoxStoreRank: data.storeRank,
+          firefoxRating: data.ratings.slice(0, 4),
+        };
+      }
+
+      fs.writeFile(
+        "daily-data.json",
+        JSON.stringify(dailyData, null, 4),
+        (err) => {
+          console.log(err);
+        }
+      );
     }
 
     await browser.close();
