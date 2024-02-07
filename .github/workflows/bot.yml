@@ -18,7 +18,7 @@ jobs:
         with:
             node-version: 20.x
       - run: npm ci
-      - run: git pull 
+      - run: git pull
       - run: node chrome.js
       - run: node firefox.js
       - run: node pdf.js
@@ -27,6 +27,7 @@ jobs:
             git config user.email "22274105+actions-user@users.noreply.github.com"
             git add -f 'data-chrome.json'
             git add -f 'data-firefox.json'
+            git add -f 'daily-data.json'
             git add -f 'data-table.pdf'
             git commit -m "🤖 Auto commit by Gihub Actions Bot 🤖"
             git push --force
