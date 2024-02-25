@@ -188,4 +188,4 @@ const chromeParser = {
 };
 
 // run the parser
-chromeParser.parse("egejbknaophaadmhijkepokfchkbnelc");
+chromeParser.parse("bdkfodcnmgegolifeafnpbgjnjfohado");
