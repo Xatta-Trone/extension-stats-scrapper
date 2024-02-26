@@ -1,6 +1,6 @@
 # Extension Stats Scrapper
 
-This script is designed to parse extension statistics data from [Chrome Stats](https://chrome-stats.com/d/egejbknaophaadmhijkepokfchkbnelc) and [Firefox Stats](https://firefox-stats.com/d/medium-parser) websites. It runs every hour, fetching the latest data and storing it in `data-chrome.json` and `data-firefox.json` files.
+This script is designed to parse extension statistics data from [Chrome Stats](https://chrome-stats.com/d/bdkfodcnmgegolifeafnpbgjnjfohado) and [Firefox Stats](https://firefox-stats.com/d/medium-parser) websites. It runs every hour, fetching the latest data and storing it in `data-chrome.json` and `data-firefox.json` files.
 
 # Usage
 
