@@ -81,7 +81,7 @@ const chromeParser = {
     // screenshots
     // images $x('/html/body/div[1]/section/main/div[11]/a')
     let imagesEl = await page.$x(
-      "/html/body/div[1]/section/main/div[11]/a/descendant::img/@src"
+      "/html/body/div[1]/section/main/div[12]/a/descendant::img/@src"
     );
     let images = [];
     if (imagesEl.length > 0) {
