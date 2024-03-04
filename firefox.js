@@ -25,7 +25,7 @@ const FirefoxParser = {
       author: "/html/body/div[1]/section/main/div[4]/div[1]/div[1]/span[2]/a",
       users: "/html/body/div[1]/section/main/div[4]/div[1]/div[3]/a[1]",
       usersChange: "/html/body/div[1]/section/main/div[4]/div[1]/div[3]/a[2]",
-      ratings: "/html/body/div[1]/section/main/div[4]/div[1]/div[4]/a",
+      ratings: "/html/body/div[1]/section/main/div[4]/div[1]/div[4]/a[1]",
       weeklyDownloads:
         "/html/body/div[1]/section/main/div[4]/div[1]/div[7]/span[2]",
       version: "/html/body/div[1]/section/main/div[4]/div[1]/div[5]/span[2]/a",
