@@ -22,29 +22,29 @@ const chromeParser = {
     const mappings = {
       title: "/html/body/div[1]/section/main/div[1]/div/div[1]/div[2]/h1",
       description: "/html/body/div[1]/section/main/div[1]/div/div[1]/div[2]/h2",
-      author: "/html/body/div[1]/section/main/div[4]/div[1]/div[1]/span[2]/a",
-      users: "/html/body/div[1]/section/main/div[4]/div[1]/div[3]/a[1]",
-      usersChange: "/html/body/div[1]/section/main/div[4]/div[1]/div[3]/a[2]",
-      ratings: "/html/body/div[1]/section/main/div[4]/div[1]/div[4]/a[1]",
-      ratingsChange: "/html/body/div[1]/section/main/div[4]/div[1]/div[4]/a[2]",
-      version: "/html/body/div[1]/section/main/div[4]/div[1]/div[5]/span[2]/a",
+      author: "/html/body/div[1]/section/main/div[5]/div[1]/div[1]/span[2]/a",
+      users: "/html/body/div[1]/section/main/div[5]/div[1]/div[3]/a[1]",
+      usersChange: "/html/body/div[1]/section/main/div[5]/div[1]/div[3]/a[2]",
+      ratings: "/html/body/div[1]/section/main/div[5]/div[1]/div[4]/a[1]",
+      ratingsChange: "/html/body/div[1]/section/main/div[5]/div[1]/div[4]/a[2]",
+      version: "/html/body/div[1]/section/main/div[5]/div[1]/div[5]/span[2]/a",
       lastUpdated:
-        "/html/body/div[1]/section/main/div[4]/div[1]/div[5]/span[3]",
-      createdAt: "/html/body/div[1]/section/main/div[4]/div[1]/div[6]/span[2]",
-      size: "/html/body/div[1]/section/main/div[4]/div[1]/div[10]/span[2]",
+        "/html/body/div[1]/section/main/div[5]/div[1]/div[5]/span[3]",
+      createdAt: "/html/body/div[1]/section/main/div[5]/div[1]/div[6]/span[2]",
+      size: "/html/body/div[1]/section/main/div[5]/div[1]/div[10]/span[2]",
       webStoreRank:
-        "/html/body/div[1]/section/main/div[4]/div[2]/div[1]/div[1]/a",
+        "/html/body/div[1]/section/main/div[5]/div[2]/div[1]/div[1]/a",
       webStoreRankChange:
-        "/html/body/div[1]/section/main/div[4]/div[2]/div[1]/div[1]/a/span",
+        "/html/body/div[1]/section/main/div[5]/div[2]/div[1]/div[1]/a/span",
       detailDescription: "/html/body/div[1]/section/main/div[7]/div/div/div",
     };
 
     const urlMappings = {
       chromeLink:
-        "/html/body/div[1]/section/main/div[4]/div[1]/div[2]/span/a/@href",
+        "/html/body/div[1]/section/main/div[5]/div[1]/div[2]/span/a/@href",
       website:
-        "/html/body/div[1]/section/main/div[4]/div[1]/div[12]/span[2]/a/@href",
-      promoImage: "/html/body/div[1]/section/main/div[12]/figure/img/@src",
+        "/html/body/div[1]/section/main/div[5]/div[1]/div[12]/span[2]/a/@href",
+      promoImage: "/html/body/div[1]/section/main/div[1]/img/@src",
       logo: "/html/body/div[1]/section/main/div[1]/div/div[1]/div[1]/img/@src",
     };
 
@@ -81,7 +81,7 @@ const chromeParser = {
     // screenshots
     // images $x('/html/body/div[1]/section/main/div[11]/a')
     let imagesEl = await page.$x(
-      "/html/body/div[1]/section/main/div[11]/a/descendant::img/@src"
+      "/html/body/div[1]/section/main/div[12]/a/descendant::img/@src"
     );
     let images = [];
     if (imagesEl.length > 0) {

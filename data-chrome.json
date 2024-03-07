@@ -3,21 +3,22 @@
     "description": "Read medium based articles for free.",
     "author": "https://medium-parser-ext.vercel.app",
     "users": "1,000",
-    "usersChange": "▲ 830",
+    "usersChange": "▲ 637",
     "ratings": "5.00 (7)",
     "ratingsChange": "▲ 6 new ratings",
     "version": "1.5.3",
     "lastUpdated": "2024-02-25",
     "createdAt": "2024-02-23",
     "size": "504.83K",
-    "webStoreRank": "27717",
-    "webStoreRankChange": "▲ 24884",
+    "webStoreRank": "28718",
+    "webStoreRankChange": "▲ 13228",
     "chromeLink": "https://chromewebstore.google.com/detail/medium-parser/bdkfodcnmgegolifeafnpbgjnjfohado",
     "website": "https://github.com/Xatta-Trone/medium-parser-extension",
+    "promoImage": "https://lh3.googleusercontent.com/Mwn1Fj94D1Mqyn3NopiYKeRx6TaCo_5TyMOmd5xS_052YzBHYMP6SbVqqozWai3ByKtax9PXLpcirQvB691_rrGxTA",
     "logo": "https://lh3.googleusercontent.com/EPDDL6yV8FcagiQEDH359bYSyrhLRJ3VRal_bCfdwfAKmjB4H7_JxoOjUvY0EoHk_l_0q1rjeAordDzFdBEJnTtnCw",
     "images": [
         "https://lh3.googleusercontent.com/Mwn1Fj94D1Mqyn3NopiYKeRx6TaCo_5TyMOmd5xS_052YzBHYMP6SbVqqozWai3ByKtax9PXLpcirQvB691_rrGxTA",
         "https://lh3.googleusercontent.com/dX50NGMiLRyYluGKgz6-noFtTR_Dp7KDQyeuTqsi0hRqOx659Px4qV9llvpCsMG2s_Z1ghY7tXY2RV7h6mnCCSL1Pw"
     ],
-    "lastRun": "Wed, 06 Mar 2024 02:01:36 GMT"
+    "lastRun": "Thu, 07 Mar 2024 08:58:04 GMT"
 }
