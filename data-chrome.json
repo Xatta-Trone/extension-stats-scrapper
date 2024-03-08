@@ -2,16 +2,16 @@
     "title": "Medium Parser",
     "description": "Read medium based articles for free.",
     "author": "https://medium-parser-ext.vercel.app",
-    "users": "1,000",
-    "usersChange": "▲ 637",
+    "users": "2,000+",
+    "usersChange": "▲ 1.64K",
     "ratings": "5.00 (7)",
     "ratingsChange": "▲ 6 new ratings",
     "version": "1.5.3",
     "lastUpdated": "2024-02-25",
     "createdAt": "2024-02-23",
     "size": "504.83K",
-    "webStoreRank": "28718",
-    "webStoreRankChange": "▲ 13228",
+    "webStoreRank": "20436",
+    "webStoreRankChange": "▲ 21489",
     "chromeLink": "https://chromewebstore.google.com/detail/medium-parser/bdkfodcnmgegolifeafnpbgjnjfohado",
     "website": "https://github.com/Xatta-Trone/medium-parser-extension",
     "promoImage": "https://lh3.googleusercontent.com/Mwn1Fj94D1Mqyn3NopiYKeRx6TaCo_5TyMOmd5xS_052YzBHYMP6SbVqqozWai3ByKtax9PXLpcirQvB691_rrGxTA",
@@ -20,5 +20,5 @@
         "https://lh3.googleusercontent.com/Mwn1Fj94D1Mqyn3NopiYKeRx6TaCo_5TyMOmd5xS_052YzBHYMP6SbVqqozWai3ByKtax9PXLpcirQvB691_rrGxTA",
         "https://lh3.googleusercontent.com/dX50NGMiLRyYluGKgz6-noFtTR_Dp7KDQyeuTqsi0hRqOx659Px4qV9llvpCsMG2s_Z1ghY7tXY2RV7h6mnCCSL1Pw"
     ],
-    "lastRun": "Thu, 07 Mar 2024 08:58:37 GMT"
+    "lastRun": "Fri, 08 Mar 2024 01:04:18 GMT"
 }
