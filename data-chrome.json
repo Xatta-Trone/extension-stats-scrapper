@@ -4,17 +4,21 @@
     "author": "https://medium-parser-ext.vercel.app",
     "users": "2,000+",
     "usersChange": "▲ 1,000",
-    "ratings": "5.00 (7)",
-    "ratingsChange": "▲ 3 new ratings",
+    "ratings": "4.56 (9)",
+    "ratingsChange": "▼ 0.44",
     "version": "1.5.3",
     "lastUpdated": "2024-02-25",
     "createdAt": "2024-02-23",
     "size": "504.83K",
-    "webStoreRank": "20385",
-    "webStoreRankChange": "▲ 8342",
+    "webStoreRank": "20195",
+    "webStoreRankChange": "▲ 8479",
     "chromeLink": "https://chromewebstore.google.com/detail/medium-parser/bdkfodcnmgegolifeafnpbgjnjfohado",
     "website": "https://github.com/Xatta-Trone/medium-parser-extension",
     "promoImage": "https://lh3.googleusercontent.com/Mwn1Fj94D1Mqyn3NopiYKeRx6TaCo_5TyMOmd5xS_052YzBHYMP6SbVqqozWai3ByKtax9PXLpcirQvB691_rrGxTA",
     "logo": "https://lh3.googleusercontent.com/EPDDL6yV8FcagiQEDH359bYSyrhLRJ3VRal_bCfdwfAKmjB4H7_JxoOjUvY0EoHk_l_0q1rjeAordDzFdBEJnTtnCw",
-    "lastRun": "Sun, 10 Mar 2024 01:08:43 GMT"
+    "images": [
+        "https://lh3.googleusercontent.com/Mwn1Fj94D1Mqyn3NopiYKeRx6TaCo_5TyMOmd5xS_052YzBHYMP6SbVqqozWai3ByKtax9PXLpcirQvB691_rrGxTA",
+        "https://lh3.googleusercontent.com/dX50NGMiLRyYluGKgz6-noFtTR_Dp7KDQyeuTqsi0hRqOx659Px4qV9llvpCsMG2s_Z1ghY7tXY2RV7h6mnCCSL1Pw"
+    ],
+    "lastRun": "Mon, 11 Mar 2024 01:05:40 GMT"
 }
