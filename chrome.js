@@ -20,8 +20,8 @@ const chromeParser = {
     });
 
     const mappings = {
-      title: "/html/body/div[1]/section/main/div[1]/div/div[1]/div[2]/h1",
-      description: "/html/body/div[1]/section/main/div[1]/div/div[1]/div[2]/h2",
+      title: "/html/body/div[1]/section/main/div[1]/div/h1",
+      description: "/html/body/div[1]/section/main/div[1]/div/h2",
       author: "/html/body/div[1]/section/main/div[5]/div[1]/div[1]/span[2]/a",
       users: "/html/body/div[1]/section/main/div[5]/div[1]/div[3]/a[1]",
       usersChange: "/html/body/div[1]/section/main/div[5]/div[1]/div[3]/a[2]",
@@ -36,7 +36,7 @@ const chromeParser = {
         "/html/body/div[1]/section/main/div[5]/div[2]/div[1]/div[1]/a",
       webStoreRankChange:
         "/html/body/div[1]/section/main/div[5]/div[2]/div[1]/div[1]/a/span",
-      detailDescription: "/html/body/div[1]/section/main/div[7]/div/div/div",
+      detailDescription: "/html/body/div[1]/section/main/div[8]/div",
     };
 
     const urlMappings = {
@@ -57,8 +57,10 @@ const chromeParser = {
       );
 
       if (val != null) {
-        console.log(key, val);
+        console.warn(key, val);
         data[key] = val;
+      }else{
+        console.error(key)
       }
     }
 
@@ -72,7 +74,7 @@ const chromeParser = {
         );
         // console.log(urlData);
         if (urlData != undefined && urlData.length > 0) {
-          console.log(key, urlData);
+          // console.log(key, urlData);
           data[key] = urlData;
         }
       }
@@ -81,7 +83,7 @@ const chromeParser = {
     // screenshots
     // images $x('/html/body/div[1]/section/main/div[11]/a')
     let imagesEl = await page.$x(
-      "/html/body/div[1]/section/main/div[12]/a/descendant::img/@src"
+      "/html/body/div[1]/section/main/div[15]/a/descendant::img/@src"
     );
     let images = [];
     if (imagesEl.length > 0) {
