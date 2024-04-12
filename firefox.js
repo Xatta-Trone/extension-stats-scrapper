@@ -20,23 +20,24 @@ const FirefoxParser = {
     });
 
     const mappings = {
-      title: "/html/body/div[1]/section/main/div[1]/div/div[1]/div[2]/h1",
-      description: "/html/body/div[1]/section/main/div[1]/div/div[1]/div[2]/h2",
-      author: "/html/body/div[1]/section/main/div[4]/div[1]/div[1]/span[2]/a",
-      users: "/html/body/div[1]/section/main/div[4]/div[1]/div[3]/a[1]",
-      usersChange: "/html/body/div[1]/section/main/div[4]/div[1]/div[3]/a[2]",
-      ratings: "/html/body/div[1]/section/main/div[4]/div[1]/div[4]/a[1]",
+      title: "/html/body/div[1]/section/main/div[1]/div/h1",
+      description: "/html/body/div[1]/section/main/div[1]/div/h2",
+      author: "/html/body/div[1]/section/main/div[5]/div[1]/div[1]/span[2]/a",
+      users: "/html/body/div[1]/section/main/div[5]/div[1]/div[3]/a[1]",
+      usersChange:
+        "/html/body/div[1]/section/main/div[5]/div[1]/div[3]/a[2]/span",
+      ratings: "/html/body/div[1]/section/main/div[5]/div[1]/div[4]/a",
       weeklyDownloads:
-        "/html/body/div[1]/section/main/div[4]/div[1]/div[7]/span[2]",
-      version: "/html/body/div[1]/section/main/div[4]/div[1]/div[5]/span[2]/a",
+        "/html/body/div[1]/section/main/div[5]/div[1]/div[7]/span[2]",
+      version: "/html/body/div[1]/section/main/div[5]/div[1]/div[5]/span[2]/a",
       lastUpdated:
-        "/html/body/div[1]/section/main/div[4]/div[1]/div[5]/span[3]",
-      createdAt: "/html/body/div[1]/section/main/div[4]/div[1]/div[6]/span[2]",
-      size: "/html/body/div[1]/section/main/div[4]/div[1]/div[12]/span[2]",
-      storeRank: "/html/body/div[1]/section/main/div[4]/div[2]/div[1]/div[1]/a",
+        "/html/body/div[1]/section/main/div[5]/div[1]/div[5]/span[3]",
+      createdAt: "/html/body/div[1]/section/main/div[5]/div[1]/div[6]/span[2]",
+      size: "/html/body/div[1]/section/main/div[5]/div[1]/div[12]/span[2]",
+      storeRank: "/html/body/div[1]/section/main/div[5]/div[2]/div[1]/div[1]/a",
       storeRankChange:
-        "/html/body/div[1]/section/main/div[4]/div[2]/div[1]/div[1]/a/span",
-      detailDescription: "/html/body/div[1]/section/main/div[7]/div/div",
+        "/html/body/div[1]/section/main/div[5]/div[2]/div[1]/div[1]/a/span",
+      detailDescription: "/html/body/div[1]/section/main/div[8]/div/div",
     };
 
     const urlMappings = {
@@ -59,6 +60,8 @@ const FirefoxParser = {
       if (val != null) {
         console.log(key, val);
         data[key] = val;
+      }else {
+        console.error(key)
       }
     }
 
@@ -81,7 +84,7 @@ const FirefoxParser = {
     // screenshots
     // images $x('/html/body/div[1]/section/main/div[11]/a')
     let imagesEl = await page.$x(
-      "/html/body/div[1]/section/main/div[11]/a/descendant::img/@src"
+      "/html/body/div[1]/section/main/div[13]/a/descendant::img/@src"
     );
     let images = [];
     if (imagesEl.length > 0) {
