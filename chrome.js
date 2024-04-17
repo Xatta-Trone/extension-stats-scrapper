@@ -136,13 +136,13 @@ const chromeParser = {
       if(dailyData.hasOwnProperty(todaysDateKey)) {
         dailyData[todaysDateKey] = {
           ...dailyData[todaysDateKey],
-          chromeUsers: data.users.replaceAll(",", ""),
+          chromeUsers: data.users.replaceAll(",", "").replaceAll("+", ""),
           chromeStoreRank: data.webStoreRank,
           chromeRating: data.ratings.slice(0,4),
         };
       }else {
         dailyData[todaysDateKey] = {
-          chromeUsers: data.users.replaceAll(",", ""),
+          chromeUsers: data.users.replaceAll(",", "").replaceAll("+", ""),
           chromeStoreRank: data.webStoreRank,
           chromeRating: data.ratings.slice(0, 4),
         };
