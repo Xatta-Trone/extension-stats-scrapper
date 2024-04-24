@@ -26,7 +26,7 @@ const FirefoxParser = {
       users: "/html/body/div[1]/section/main/div[5]/div[1]/div[3]/a[1]",
       usersChange:
         "/html/body/div[1]/section/main/div[5]/div[1]/div[3]/a[2]/span",
-      ratings: "/html/body/div[1]/section/main/div[5]/div[1]/div[4]/a",
+      ratings: "/html/body/div[1]/section/main/div[5]/div[1]/div[4]/a[1]",
       weeklyDownloads:
         "/html/body/div[1]/section/main/div[5]/div[1]/div[7]/span[2]",
       version: "/html/body/div[1]/section/main/div[5]/div[1]/div[5]/span[2]/a",
@@ -60,8 +60,8 @@ const FirefoxParser = {
       if (val != null) {
         console.log(key, val);
         data[key] = val;
-      }else {
-        console.error(key)
+      } else {
+        console.error(key);
       }
     }
 
@@ -84,7 +84,7 @@ const FirefoxParser = {
     // screenshots
     // images $x('/html/body/div[1]/section/main/div[11]/a')
     let imagesEl = await page.$x(
-      "/html/body/div[1]/section/main/div[13]/a/descendant::img/@src"
+      "/html/body/div[1]/section/main/div[14]/a/descendant::img/@src"
     );
     let images = [];
     if (imagesEl.length > 0) {
