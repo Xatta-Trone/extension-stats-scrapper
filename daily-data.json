@@ -422,5 +422,13 @@
         "firefoxUsers": "3777",
         "firefoxStoreRank": "1426",
         "firefoxRating": "4.75"
+    },
+    "2024-04-29": {
+        "chromeUsers": "10000",
+        "chromeStoreRank": "8784",
+        "chromeRating": "4.85",
+        "firefoxUsers": "3838",
+        "firefoxStoreRank": "1419",
+        "firefoxRating": "4.75"
     }
 }
