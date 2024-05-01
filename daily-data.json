@@ -438,5 +438,13 @@
         "firefoxUsers": "3786",
         "firefoxStoreRank": "1422",
         "firefoxRating": "4.75"
+    },
+    "2024-05-01": {
+        "chromeUsers": "10000",
+        "chromeStoreRank": "8314",
+        "chromeRating": "4.85",
+        "firefoxUsers": "3737",
+        "firefoxStoreRank": "1419",
+        "firefoxRating": "4.76"
     }
 }
